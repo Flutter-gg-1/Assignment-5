@@ -1,6 +1,7 @@
 void main(List<String> arguments) {
   generalInfo();
   hobies();
+  interests();
 }
 
 generalInfo() {
@@ -23,4 +24,16 @@ hobies() {
   print('\n\n---------Hobbies---------');
   hobbies.forEach((k, v) => print("$k: $v"));
   print('-------------------------');
+}
+
+interests() {
+  Map<String, String> interests = {
+    "Technology":
+        "I am passionate about the latest tech trends and innovations.",
+    "Music": "I love listening to and creating music.",
+    "Sports": "I enjoy playing and watching various sports."
+  };
+  print('\n\n---------Interests---------');
+  interests.forEach((k, v) => print("$k: $v"));
+  print('---------------------------');
 }
