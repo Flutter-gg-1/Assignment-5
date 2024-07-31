@@ -1,5 +1,6 @@
 // imports
-import 'dart:io'; // library to interact with user
+import 'dart:io';       // library to interact with user
+import 'get_info.dart'; // function to print my info
 
 void main() {
   print("-" * 50);
@@ -25,7 +26,7 @@ void main() {
         break while_loop;
 
       case '1':
-      // getInfo();
+      getInfo();
 
       case '2':
       // getHobbies();
@@ -37,8 +38,7 @@ void main() {
       // getMoreInfo();
 
       default:
-        print(
-            "Oh no, it seems like you didn't choose any valid choice.\nTry again");
+        print("Oh no, it seems like you didn't choose any valid number.\nTry again");
     }
   }
 }
