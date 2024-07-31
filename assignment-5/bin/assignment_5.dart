@@ -1,5 +1,9 @@
-import 'package:assignment_5/assignment_5.dart' as assignment_5;
+import 'all_classes.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${assignment_5.calculate()}!');
+void main() {
+  // General Information
+  generalInformation();
+  // Hobbies
+  // Interests
+  // Additional Information
 }
