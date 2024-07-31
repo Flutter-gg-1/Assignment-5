@@ -1,6 +1,7 @@
 // imports
-import 'dart:io';       // library to interact with user
-import 'get_info.dart'; // function to print my info
+import 'dart:io';           // library to interact with user
+import 'get_info.dart';     // function to print my info
+import 'get_hobbies.dart';  // function to print my hobbies
 
 void main() {
   print("-" * 50);
@@ -11,6 +12,7 @@ void main() {
   print('|');
   while_loop:
   while (true) {
+    print("'" * 50);
     print("|      What do you like to know about me ?       |");
     print("|      1- General Information                    |");
     print("|      2- Hobbies                                |");
@@ -29,7 +31,7 @@ void main() {
       getInfo();
 
       case '2':
-      // getHobbies();
+      getHobbies();
 
       case '3':
       // getInterests();
