@@ -2,6 +2,7 @@ import 'dart:io';
 import "general_information.dart";
 import 'exit_method.dart';
 import 'hobbies.dart';
+import 'interests.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
@@ -33,14 +34,24 @@ void main(List<String> arguments) {
         break;
 
       case "1":
+        print("\n");
         hobbies(name: "Yara Albouq");
         break;
 
+      case "2":
+        print("\n");
+        interests();
+        break;
+
+      case "3":
+        print("\n");
+        
+        break;
+
       //for exit
-      case "q"|| "Q":
-      isExit= exitMethod();
-      break;
-      
+      case "q" || "Q":
+        isExit = exitMethod();
+        break;
 
       default:
         print("wrong choice");
