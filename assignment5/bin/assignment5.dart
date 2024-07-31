@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'general_information.dart';
 import 'hobbies.dart';
+import 'interests.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
@@ -22,6 +23,7 @@ void main(List<String> arguments) {
       case 2:
       hobbies();
       case 3:
+      interests();
       case 4:
       case 5:
     }
