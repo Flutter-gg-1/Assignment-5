@@ -1,13 +1,27 @@
-// Dashboard Information
 import 'all_classes.dart';
+import 'dart:io';
 
 void dashboardInformation() {
-  print("General Information");
-  print(generalINFO);
-  print("Hobbies");
-  print(hobbiesINFO);
-  print("Interests");
-  print(interestsINFO);
-  print("Additional Information");
-  print(additionalINFO);
+  print("\nDashboard Information\n");
+  print("Choose from the following options: ");
+  print(
+      "\n1.General Information, 2.Hobbies, 3.Interests, 4.Additional Information\n");
+
+  yourNumberChoose();
+}
+
+void yourNumberChoose() {
+  int option = int.parse(stdin.readLineSync()!);
+  if (option == 1) {
+    generalInformation();
+  } else if (option == 2) {
+    hobbies();
+  } else if (option == 3) {
+    interests();
+  } else if (option == 4) {
+    additionalInformation();
+  } else {
+    print("Invalid input");
+    exit(0);
+  }
 }
