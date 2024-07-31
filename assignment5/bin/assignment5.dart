@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'Additional.dart';
 import 'generalInfo.dart';
 import 'hobbies.dart';
 
@@ -26,8 +27,10 @@ void main(List<String> arguments) {
       print("what do you what to know about me?");
       print("1-general information");
       print("2-Hobbies");
-      print("3-interests and passions");
+      print("3-Additional Information about me");
       int? input = int.parse(stdin.readLineSync()!);
+
+
 
       switch (input) {
         case 1:
@@ -35,9 +38,12 @@ void main(List<String> arguments) {
 
         case 2:
           hobbies();
+          case 3:
+          additional();
+          
       }
     } else if (answer == 2) {
-      print("Whhay -_- !!");
+      print("\nWhhay -_- !!");
       print("try again\n");
     } else {
       print("somthing  whent wrong");
