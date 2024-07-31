@@ -1,14 +1,16 @@
 import 'dart:io';
-
-generalInformation(){
-  Map<String,dynamic> information ={
+//General Information: Your name, age, and occupation.
+generalInformation() {
+  Map<String, dynamic> information = {
     "name": "Yara Mohammed Albouq",
     "age": "23 years old",
     "occupation": "Trainee at Tuwaiq Academy",
   };
-  information.forEach((key,value){
+
+  //to print each (kye, value) in new line
+  information.forEach((key, value) {
     print("$key : $value");
   });
-  stdin.readLineSync();
   
+  stdin.readLineSync();
 }

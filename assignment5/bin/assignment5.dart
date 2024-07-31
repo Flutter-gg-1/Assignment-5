@@ -1,6 +1,7 @@
 import 'dart:io';
 import "general_information.dart";
 import 'exit_method.dart';
+import 'hobbies.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
@@ -14,7 +15,6 @@ void main(List<String> arguments) {
     print("\n");
     print("Select what type of information do you want to know about me: ");
     print("_____________________________________________________________");
-
     print("\n");
     print("* (0) *            General Information                   * ");
     print("* (1) *                 Hobbies                          * ");
@@ -30,18 +30,20 @@ void main(List<String> arguments) {
       case "0":
         print("\n");
         generalInformation();
+        break;
 
+      case "1":
+        hobbies(name: "Yara Albouq");
         break;
 
       //for exit
       case "q"|| "Q":
       isExit= exitMethod();
       break;
+      
 
       default:
         print("wrong choice");
     }
-
-    
   } while (!isExit);
 }
