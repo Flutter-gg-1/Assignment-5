@@ -1,7 +1,9 @@
 class Info {
   static void showInstructions() {
-    print('''
+    ColorfulPrint.yellow('''
+
       ----------------------------
+
       What would you like to know about me?
       Enter a number from the list below:
 
@@ -14,20 +16,49 @@ class Info {
       q | Quit
 
       ----------------------------
+
       ''');
   }
 
   static void showInfo(String str) {
     switch (str) {
       case '1':
-        print('My name is Amer, \nI am 99yrs of age,\nI am a Computer Wizard!');
+        ColorfulPrint.green(
+            'My name is Amer, \nI am 99yrs of age,\nI am a Computer Wizard!');
+      // print('My name is Amer, \nI am 99yrs of age,\nI am a Computer Wizard!');
       case '2':
-        print('I like the piano, weight lifting, billiards, and tennis');
+        ColorfulPrint.green(
+            'I like the piano, weight lifting, billiards, and tennis');
       case '3':
-        print('Most things related to Technology');
+        ColorfulPrint.green('Most things related to Technology');
       case '4':
-        print(
+        ColorfulPrint.green(
             'I play music and video games in my free time. \nI like Snowboarding during the winter season, and Beach Resorts during summer.');
+      default:
+        ColorfulPrint.red('UNKNOWN ENTRY!');
     }
+    ColorfulPrint.yellow('''
+
+      Would you like to ask about something else?
+      Enter 'i' to review instructions
+      Enter 'q' to terminate
+
+      ''');
+  }
+
+  static void terminateMsg() => ColorfulPrint.red('App Terminated!');
+}
+
+extension ColorfulPrint on Info {
+  static void yellow(String text) {
+    print('\x1B[33m$text\x1B[0m');
+  }
+
+  static void green(String text) {
+    print('\x1B[32m$text\x1B[0m');
+  }
+
+  static void red(String text) {
+    print('\x1B[31m$text\x1B[0m');
   }
 }
