@@ -5,9 +5,9 @@ void generalInformation() {
     "age": [35],
     "occupation": ["Programmer"],
   };
-
   generalINFO.add(generalInformation);
-
   print(generalINFO);
+
+  
 
 }
