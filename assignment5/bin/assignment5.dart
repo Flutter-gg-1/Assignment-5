@@ -3,6 +3,7 @@ import 'general_information.dart';
 import 'hobbies.dart';
 import 'interests.dart';
 import 'additinal_information.dart';
+import 'quit.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
@@ -11,7 +12,8 @@ void main(List<String> arguments) {
     // Choose a number to find out more about me ^_^
     print("\n\n");
     print("______ ^_^ Hello, nice to meet you ^_^ ______");
-    print("1: General Information");
+    print("\nChoose a number to find out more about me ^_^");
+    print("\n1: General Information");
     print("2: Hobbies");
     print("3: Interests");
     print("4: Additional Information");
@@ -30,6 +32,7 @@ void main(List<String> arguments) {
       case 4:
         additinalInfo(); // function call for printing additinal information
       case 5:
+        isExit = quit();
     }
   } while (!isExit);
 }
