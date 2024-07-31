@@ -7,5 +7,5 @@ void interests() {
   };
   interestsINFO.add(interests);
   print(interestsINFO);
-  yourNumberChoose();
+  chooseYourNumber();
 }

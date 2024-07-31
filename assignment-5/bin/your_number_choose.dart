@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'all_classes.dart';
 
-void yourNumberChoose() {
+void chooseYourNumber() {
   print("Choose from the following options: ");
   print(
       "\n1.General Information, 2.Hobbies, 3.Interests, 4.Additional Information, 5.Exit\n");

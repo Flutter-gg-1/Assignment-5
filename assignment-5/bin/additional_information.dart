@@ -9,5 +9,5 @@ void additionalInformation() {
   };
   additionalINFO.add(additionalInformation);
   print(additionalINFO);
-  yourNumberChoose();
+  chooseYourNumber();
 }

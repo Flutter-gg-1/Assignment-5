@@ -6,5 +6,5 @@ import 'all_classes.dart';
     };
     hobbiesINFO.add(hobbies);
     print(hobbiesINFO);
-    yourNumberChoose();
+    chooseYourNumber();
   }

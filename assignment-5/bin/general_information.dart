@@ -8,7 +8,6 @@ void generalInformation() {
   };
   generalINFO.add(generalInformation);
   print(generalINFO);
-
-  yourNumberChoose();
+  chooseYourNumber();
 
 }
