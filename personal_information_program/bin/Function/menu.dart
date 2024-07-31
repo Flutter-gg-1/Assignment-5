@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'person.dart';
 menu(){
   print('\x1B[34m|========Who I am?==========|\x1B[0m');
   print('\x1B[32m\n1-General Information\n2-Hobbies\n3-Interests\n4-Additional Information\x1B[0m');
@@ -8,16 +9,16 @@ menu(){
   String input = stdin.readLineSync().toString().trim();
   switch (input) {
     case '1':
-      
+      Person.generalInfo();
       break;
     case '2':
-      
+      Person.hobbies();
       break;
     case '3':
-      
+      Person.interests();
       break;
     case '4':
-      
+      Person.additionalInfo();
       break;
     case '5':
       exit(0);
