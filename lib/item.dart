@@ -23,3 +23,13 @@ void walking() {
   print(" /|");
   print("${"*" * 14}\n");
 }
+
+void computer() {
+  print(" ___");
+  print("|010|");
+  print("-----");
+  print(" ___");
+  print(r"/--/");
+  print("----");
+  
+}

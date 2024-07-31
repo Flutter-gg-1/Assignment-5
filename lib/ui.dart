@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'item.dart';
+
 void titleCard() {
   int vertical = 4;
   int horizontal = 22;
@@ -16,6 +17,7 @@ void titleCard() {
     }
   }
   stdout.write("${"*" * 22}\n");
+  print("age:27 | Student at tuwaiq academy");
 }
 
 void hobbies() {
@@ -33,9 +35,14 @@ void hobbies() {
   controller();
 }
 
-
 void interests() {
   door();
-  print("\n -----Codeing-----");
+  print("\n -----Programing-----");
+
+  computer();
+  print(
+      "I'm inters in develpeing from cloud computing and small staff like raspberry pi");
+  print("");
 }
+
 void selection() {}
