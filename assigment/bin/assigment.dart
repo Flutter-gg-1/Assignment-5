@@ -54,12 +54,12 @@ interests() {
       "passions": "passions",
       "description": "passions is dead",
     },
-  ];
+  ]; //for in to print interst
   for (var element in interests) {
     if (element.containsKey("interests")) {
       print("${element["interests"]} : Description ${element["description"]}");
     }
-  }
+  } //for in to print passtion
   for (var element in interests) {
     if (element.containsKey("passions")) {
       print("${element["passions"]} : Description ${element["description"]}");
