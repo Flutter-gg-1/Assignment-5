@@ -1,45 +1,36 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
-  bool isExit = false;
+  print('\n---- Conversation with me-----\n');
 
-  do {
-    switch (menu()) {
-      case '1':
-        showPersonalInfo();
-      case '2':
-        showHobbies();
-      case '3':
-        showInterests();
-      case '4':
-        showAdditionalInfo();
-      case '0':
-        isExit = true;
-      default:
-    }
-  } while (!isExit);
-}
+  String yourName = askUser('Enter your name: ');
 
-menu() {
-  print('\n---- About me-----\n');
-  print('1: personal information');
-  print('2: Hobbies');
-  print('3: Interests');
-  print('4: If you would like to know more...');
-  print('0: exit');
-
-  stdout.write('What would you like to know? ');
-  String? choice = stdin.readLineSync();
-
-  if (choice != null && choice.isNotEmpty) {
-    return choice;
+  if (yourName.isEmpty) {
+    print('Hello my friend!!');
   } else {
-    print('Invalid Input');
-    return '0';
+    print('Hello $yourName');
   }
+
+  showPersonalInfo();
+
+  
 }
 
-showPersonalInfo() {}
+askUser(String question) {
+  stdout.write(question);
+  var answer = stdin.readLineSync();
+  return answer;
+}
+
+showPersonalInfo() {
+  String name = 'Abdulaziz Alamri';
+  print('My name is $name, nice to meet you!!');
+  print(
+      'I am currently taking a course at Tuwaiq Academy to improve my skills in programming.');
+  print(
+      'Mobile development has always been interesting to me, so I decided to persue it by participating in a Flutter camp. I am learning something new everyday, practicing and working, it is fun very benefitial to me.\n');
+}
+
 showHobbies() {}
 showInterests() {}
 showAdditionalInfo() {}
