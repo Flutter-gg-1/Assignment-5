@@ -42,7 +42,16 @@ void interests() {
   computer();
   print(
       "I'm inters in develpeing from cloud computing and small staff like raspberry pi");
-  print("");
 }
 
 void selection() {}
+void additionalInformation() {
+  print(
+      "some time i bord try teaking in computer like try new os or try game devolpment");
+  print(r"      C");
+  print("    / /");
+  print("   / /");
+  print("  / /");
+  print(" / /");
+  print(" O");
+}
