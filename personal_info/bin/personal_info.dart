@@ -11,6 +11,7 @@ void main() {
     if (userInput! == 'i') {
       Info.showInstructions();
     } else if (userInput == 'q') {
+      Info.terminateMsg();
       shouldExit = true;
     } else {
       Info.showInfo(userInput);
