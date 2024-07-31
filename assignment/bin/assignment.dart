@@ -2,6 +2,7 @@ void main(List<String> arguments) {
   generalInfo();
   hobies();
   interests();
+  additionalInfo();
 }
 
 generalInfo() {
@@ -36,4 +37,11 @@ interests() {
   print('\n\n---------Interests---------');
   interests.forEach((k, v) => print("$k: $v"));
   print('---------------------------');
+}
+
+additionalInfo() {
+  print('\n\n-------Additional Information-------');
+  print(
+      'I am also a volunteer at a local animal shelter and enjoy hiking during weekends.');
+  print('------------------------------------\n\n');
 }
