@@ -1,4 +1,8 @@
 additional() {
+  print("-----------------------------------------------------");
+  print("-------Here are some additional info about me--------");
+  print("-----------------------------------------------------");
+
   print("\n\nI like dogs and hate cats >_<");
   print("I don't like spicy food");
   print("i like to sleep a LOT");
@@ -6,5 +10,4 @@ additional() {
   print("I want to open my own flower shop and make beautiful bouquets");
   print(
       "I LOVE >_< pastries a lot so i want to open my own bakery to eat for free");
-
 }

@@ -12,11 +12,13 @@ Additional Information: Any other interesting details about yourself.
 */
 
 void main(List<String> arguments) {
+  
   print("\n\n---------------------------------------------------------");
   print("---------------> WELCOM TO NAJWA'S WORLD <---------------");
   print("---------------------------------------------------------\n");
 
-  bool condition = false;
+  bool condition = false; 
+  //To make loop until the user select yes
   while (condition == false) {
     print("Do you want to know more about NAJWA?");
     print("1-YES                          2-NO");
@@ -30,15 +32,15 @@ void main(List<String> arguments) {
       print("3-Additional Information About Me");
       int? input = int.parse(stdin.readLineSync()!);
 
-
+//start of the switch
 
       switch (input) {
-        case 1:
+        case 1: //general info function
           generalInfo();
 
-        case 2:
+        case 2: //the hobbies function
           hobbies();
-          case 3:
+          case 3: //the additional info function
           additional();
           
       }
@@ -49,4 +51,5 @@ void main(List<String> arguments) {
       print("somthing  whent wrong");
     }
   }
+  
 }
