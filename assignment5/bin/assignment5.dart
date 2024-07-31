@@ -2,10 +2,13 @@ import 'dart:io';
 import 'general_information.dart';
 import 'hobbies.dart';
 import 'interests.dart';
+import 'additinal_information.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
+
   do {
+    // Choose a number to find out more about me ^_^
     print("\n\n");
     print("______ ^_^ Hello, nice to meet you ^_^ ______");
     print("1: General Information");
@@ -19,12 +22,13 @@ void main(List<String> arguments) {
 
     switch (userInpu) {
       case 1:
-        generalInformation();
+        generalInformation(); // function call for printing general information
       case 2:
-      hobbies();
+        hobbies(); // function call for printing hobbies
       case 3:
-      interests();
+        interests(); // function call for printing interests and passions
       case 4:
+        additinalInfo(); // function call for printing additinal information
       case 5:
     }
   } while (!isExit);
