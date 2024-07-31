@@ -5,10 +5,14 @@ void main(List<String> arguments) {
 
   do {
     switch (menu()) {
-      case '1': 
+      case '1':
+        showPersonalInfo();
       case '2':
+        showHobbies();
       case '3':
+        showInterests();
       case '4':
+        showAdditionalInfo();
       case '0':
         isExit = true;
       default:
@@ -34,3 +38,8 @@ menu() {
     return '0';
   }
 }
+
+showPersonalInfo() {}
+showHobbies() {}
+showInterests() {}
+showAdditionalInfo() {}
