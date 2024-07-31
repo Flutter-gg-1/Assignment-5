@@ -6,5 +6,6 @@ generalInformation(){
   String occupation = "student at tuwaiq Academy";
 
   print("My name is $name. I'm $age years old and a $occupation.");
+  print("_____________________________________________");
   stdin.readLineSync();
 }
