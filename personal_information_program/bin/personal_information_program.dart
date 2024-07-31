@@ -1,6 +1,7 @@
 import './personal_function.dart';
 import './hobbies_function.dart';
 import './interests_function.dart';
+import './addtional_info_function.dart';
 
 void main() {
   print("*******************************************");
@@ -35,5 +36,8 @@ void main() {
   print("*******************************************");
 
   print(interestsFunction());
+  print("*******************************************");
+
+  addtionalFunction();
   print("*******************************************");
 }
