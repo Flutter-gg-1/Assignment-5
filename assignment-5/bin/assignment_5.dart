@@ -6,5 +6,6 @@ void main() {
   // Hobbies
   hobbies();
   // Interests
+  interests();
   // Additional Information
 }
