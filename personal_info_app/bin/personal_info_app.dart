@@ -1,5 +1,44 @@
-import 'package:personal_info_app/personal_info_app.dart' as personal_info_app;
+// imports
+import 'dart:io'; // library to interact with user
 
-void main(List<String> arguments) {
-  print('Hello world: ${personal_info_app.calculate()}!');
+void main() {
+  print("-" * 50);
+  print("|                Hello friend 👋                 |");
+  print("|   Welcome to my personal information app 😄    |");
+  stdout.write('|');
+  stdout.write("'" * 48);
+  print('|');
+  while_loop:
+  while (true) {
+    print("|      What do you like to know about me ?       |");
+    print("|      1- General Information                    |");
+    print("|      2- Hobbies                                |");
+    print("|      3- Interests                              |");
+    print("|      4- Additional Information                 |");
+    print("| to EXIT, enter 0                               |");
+    print("'" * 50);
+    stdout.write("What did you choose ? : ");
+    String? userInput = stdin.readLineSync();
+    switch (userInput) {
+      case '0':
+        print("Thank you for visiting my personal info app 🤝\nSee you soon !");
+        break while_loop;
+
+      case '1':
+      // getInfo();
+
+      case '2':
+      // getHobbies();
+
+      case '3':
+      // getInterests();
+
+      case '4':
+      // getMoreInfo();
+
+      default:
+        print(
+            "Oh no, it seems like you didn't choose any valid choice.\nTry again");
+    }
+  }
 }
