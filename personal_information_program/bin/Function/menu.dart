@@ -1,5 +1,4 @@
 import 'dart:io';
-
 menu(){
   print('\x1B[34m|========Who I am?==========|\x1B[0m');
   print('\x1B[32m\n1-General Information\n2-Hobbies\n3-Interests\n4-Additional Information\x1B[0m');
