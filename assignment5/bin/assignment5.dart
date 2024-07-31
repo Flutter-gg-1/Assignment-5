@@ -3,6 +3,7 @@ import "general_information.dart";
 import 'exit_method.dart';
 import 'hobbies.dart';
 import 'interests.dart';
+import 'additional_information.dart';
 
 void main(List<String> arguments) {
   bool isExit = false;
@@ -27,6 +28,7 @@ void main(List<String> arguments) {
     print("__________________");
     String? choice = stdin.readLineSync();
 
+    //switch between user input option
     switch (choice) {
       case "0":
         print("\n");
@@ -45,7 +47,8 @@ void main(List<String> arguments) {
 
       case "3":
         print("\n");
-        
+
+        additionalInformation();
         break;
 
       //for exit
