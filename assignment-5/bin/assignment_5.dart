@@ -4,6 +4,7 @@ void main() {
   // General Information
   generalInformation();
   // Hobbies
+  hobbies();
   // Interests
   // Additional Information
 }
