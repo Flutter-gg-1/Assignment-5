@@ -9,7 +9,20 @@ generalInfo() {
 
   print("Hello $usernam nice to meet you");
 
-  print("Born in 4-7-2001 so i am 23 years old!!");
-  print("I resentally graduated as a Software engineer from the university of jeddah");
+  print("I was born in 4-7-2001 so i am 23 years old!!");
+  print("What about you how old are you?");
+  int? userAge = int.parse(stdin.readLineSync()!);
+  num najwaAge = 23;
+  if (userAge == najwaAge) {
+    print("We Are In The Same Age WOOW");
+  } else if (userAge > najwaAge) {
+    num ageGab = userAge - najwaAge;
+    print("You are bigger than me, we have a $ageGab year age gap between us.");
+  }else if (userAge < najwaAge) {
+    num ageGab = najwaAge - userAge;
+    print("You are smaller than me, we have a $ageGab year age gap between us.");
+  }
 
+  print(
+      "I resentally graduated as a Software engineer from the university of jeddah");
 }

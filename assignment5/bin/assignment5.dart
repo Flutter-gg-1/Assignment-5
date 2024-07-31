@@ -12,9 +12,9 @@ Additional Information: Any other interesting details about yourself.
 */
 
 void main(List<String> arguments) {
-  print("---------------------------------------------------------");
+  print("\n\n---------------------------------------------------------");
   print("---------------> WELCOM TO NAJWA'S WORLD <---------------");
-  print("---------------------------------------------------------");
+  print("---------------------------------------------------------\n");
 
   bool condition = false;
   while (condition == false) {
@@ -23,11 +23,11 @@ void main(List<String> arguments) {
     int? answer = int.parse(stdin.readLineSync()!);
     if (answer == 1) {
       condition = true;
-      print("Yaaay");
-      print("what do you what to know about me?");
-      print("1-general information");
-      print("2-Hobbies");
-      print("3-Additional Information about me");
+      print("\nYaaay\n");
+      print("What do you what to know about me?");
+      print("1-General Information");
+      print("2-My Hobbies");
+      print("3-Additional Information About Me");
       int? input = int.parse(stdin.readLineSync()!);
 
 
@@ -43,8 +43,8 @@ void main(List<String> arguments) {
           
       }
     } else if (answer == 2) {
-      print("\nWhhay -_- !!");
-      print("try again\n");
+      print("\nWhhay Not -_- !!");
+      print("TRY Again\n");
     } else {
       print("somthing  whent wrong");
     }
