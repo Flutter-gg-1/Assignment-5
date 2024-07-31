@@ -31,5 +31,13 @@ void computer() {
   print(" ___");
   print(r"/--/");
   print("----");
-  
+}
+
+void tools() {
+  print(r"      C");
+  print("    / /");
+  print("   / /");
+  print("  / /");
+  print(" / /");
+  print(" O");
 }

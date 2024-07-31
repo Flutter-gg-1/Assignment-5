@@ -44,14 +44,30 @@ void interests() {
       "I'm inters in develpeing from cloud computing and small staff like raspberry pi");
 }
 
-void selection() {}
 void additionalInformation() {
   print(
       "some time i bord try teaking in computer like try new os or try game devolpment");
-  print(r"      C");
-  print("    / /");
-  print("   / /");
-  print("  / /");
-  print(" / /");
-  print(" O");
+  tools();
+}
+
+void menu() {
+  late String input;
+
+  do {
+    print("1: My hobbies | 2: my interessts | 3: more info");
+    print("q quie");
+    input = stdin.readLineSync()!;
+
+    switch (input) {
+      case == "1":
+        hobbies();
+        break;
+      case == "2":
+        interests();
+        break;
+      case == "3":
+        additionalInformation();
+        break;
+    }
+  } while (input != "q" && input != "Q");
 }
