@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:asg5/genral_info.dart';
+import 'package:asg5/hobbies.dart';
 
 void main() {
 
@@ -36,6 +37,7 @@ appRun() {
         break;
 
       case "1":
+      hobbies();
         break;
 
       case "2":
