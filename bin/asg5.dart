@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:asg5/additional_info.dart';
 import 'package:asg5/genral_info.dart';
 import 'package:asg5/hobbies.dart';
 import 'package:asg5/interests.dart';
@@ -46,6 +47,7 @@ appRun() {
         break;
 
       case "3":
+      additionalInfo();
         break;
     }
   }
