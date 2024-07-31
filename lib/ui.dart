@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'item.dart';
 void titleCard() {
   int vertical = 4;
   int horizontal = 22;
@@ -19,16 +19,12 @@ void titleCard() {
 }
 
 void hobbies() {
-  print("\n___");
-  print("[ |");
-  print("---");
-  print("My hobies");
+  door();
+
+  print("-----My hobies-----");
 
   print("WALKING");
-  print("  o ");
-  print(" /");
-  print(" /|");
-  print("${"*" * 14}\n");
+  walking();
 
   print("Video games");
 
@@ -37,17 +33,9 @@ void hobbies() {
   controller();
 }
 
-void controller() {
-  print("   ____");
-  print(r"  /0__0\");
-}
 
-void tv() {
-  print(" ______");
-  print("||    ||");
-  print("||    ||");
-  print(" ______");
-  print(r"   /\");
+void interests() {
+  door();
+  print("\n -----Codeing-----");
 }
-
 void selection() {}
