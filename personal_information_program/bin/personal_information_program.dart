@@ -1,5 +1,6 @@
 import './personal_function.dart';
 import './hobbies_function.dart';
+import './interests_function.dart';
 
 void main() {
   print("*******************************************");
@@ -29,6 +30,10 @@ void main() {
     }
   ];
   print("*******************************************");
+
   hobbiesFunction(myhobbies: myhobbies);
+  print("*******************************************");
+
+  print(interestsFunction());
   print("*******************************************");
 }
