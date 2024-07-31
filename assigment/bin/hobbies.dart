@@ -1,4 +1,3 @@
-
 //hobbies functions
 hobbies() {
   //Map inside list to insert all hobbies with 2 kyes 1 of them for the hobby and the other for the description
