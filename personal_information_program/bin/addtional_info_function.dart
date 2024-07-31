@@ -1,3 +1,7 @@
+import './print_with_color.dart';
+
 addtionalFunction() {
-  print("Also,I interests with Cyper security projects and hacking .");
+  printWithColor(
+      text: "Also,I interests with Cyper security projects and hacking .",
+      color: "Cyan");
 }

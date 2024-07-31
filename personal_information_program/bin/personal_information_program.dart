@@ -2,9 +2,11 @@ import './personal_function.dart';
 import './hobbies_function.dart';
 import './interests_function.dart';
 import './addtional_info_function.dart';
+import './print_with_color.dart';
 
 void main() {
-  print("*******************************************");
+  printWithColor(
+      text: "*******************************************", color: "Green");
 
   String name = "Ali Altarouty";
   int age = 30;
@@ -30,14 +32,18 @@ void main() {
       "description": "Playing padel is more efficent thano other games",
     }
   ];
-  print("*******************************************");
+  printWithColor(
+      text: "*******************************************", color: "Green");
 
   hobbiesFunction(myhobbies: myhobbies);
-  print("*******************************************");
+  printWithColor(
+      text: "*******************************************", color: "Green");
 
-  print(interestsFunction());
-  print("*******************************************");
+  printWithColor(text: interestsFunction(), color: "Cyan");
+  printWithColor(
+      text: "*******************************************", color: "Green");
 
   addtionalFunction();
-  print("*******************************************");
+  printWithColor(
+      text: "*******************************************", color: "Green");
 }
