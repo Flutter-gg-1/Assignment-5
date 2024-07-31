@@ -1,7 +1,6 @@
 import 'all_classes.dart';
-
 void dashboardInformation() {
-  print("\nDashboard Information\n");
+  print("\n_____________**** Dashboard Information ****_________________\n");
   yourNumberChoose();
 }
 
