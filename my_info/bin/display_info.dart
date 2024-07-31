@@ -1,7 +1,7 @@
 import 'dart:io';
 
 displayInfo({required Map<String, dynamic> info}) {
-  print("\n\n\n--------------------");
+  print("\n--------------------");
   info.forEach((key, value) {
     print('$key: <$value>');
   });
