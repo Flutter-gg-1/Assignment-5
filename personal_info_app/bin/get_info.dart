@@ -25,5 +25,4 @@ void getInfo() {
     print('|');
     print('-' * 55);
   }
-  print('-' * 50);
 }
