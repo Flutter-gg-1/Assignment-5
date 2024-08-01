@@ -1,8 +1,10 @@
 //function for display my intrest
+import 'colorprint.dart';
+
 displayintrst({required List<String> interests}) {
-  print("===interests===");
-for (var intrs in interests) {
-  print(intrs);
-}
-   print(""); // Empty line for spacing
+  printPink("===interests===");
+  for (var intrs in interests) {
+     printInfo(intrs);
+  }
+   printInfo(""); // Empty line for spacing
 }

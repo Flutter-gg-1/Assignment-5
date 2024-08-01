@@ -1,8 +1,10 @@
 //function for display my hobbies
+import 'colorprint.dart';
+
 displayHobbis({required List<String> hobbies}) {
-  print("=== Hobbies ===");
+  printPink("=== Hobbies ===");
   for (var hobby in hobbies) {
-    print(hobby);
+     printInfo(hobby);
   }
-  print(""); // Empty line for spacing
+   printInfo(""); // Empty line for spacing
 }
