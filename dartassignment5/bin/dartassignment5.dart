@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'display_pannel.dart';
 import 'general_info.dart';
+import 'hobbies.dart';
 
 void main() {
   bool isExit = false;
@@ -15,6 +16,7 @@ void main() {
         break;
       //Hobbies
       case '1':
+        hobbies();
         break;
       //Interests
       case '2':
