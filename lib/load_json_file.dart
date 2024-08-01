@@ -6,7 +6,7 @@ import 'dart:io';
 * Function takes json path and return it as a map
 *
 * */
-Future<Map<String, dynamic>> loadProfile({required String path}) async {
+Future<Map<String, dynamic>> loadJsonFile({required String path}) async {
   final file = File(path);
   // wait reading file
   final jsonStr = await file.readAsString();
