@@ -1,8 +1,9 @@
 // imports
-import 'dart:io'; // library to interact with user
-import 'get_info.dart'; // function to print my info
-import 'get_hobbies.dart'; // function to print my hobbies
+import 'dart:io';            // library to interact with user
+import 'get_info.dart';      // function to print my info
+import 'get_hobbies.dart';   // function to print my hobbies
 import 'get_interests.dart'; // function to print my interests
+import 'get_more_info.dart'; // function to print my detailed info
 
 void main() {
   print("-" * 50);
@@ -46,11 +47,9 @@ void main() {
         }
         print(getInterests(interest: interest));
 
-      case '4':
-      // getMoreInfo();
+      case '4': print(getMoreInfo());
 
-      default:
-        print("Oh no, it seems like you didn't choose any valid number.\nTry again");
+      default: print("Oh no, it seems like you didn't choose any valid number.\nTry again");
     }
   }
 }

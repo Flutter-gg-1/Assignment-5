@@ -6,6 +6,7 @@ void getInfo() {
   Map<String, String> myInfo = {
     'name': 'Yaser Alkhayyat',
     'age': '23',
+    'city' : 'Makkah',
     'occupation': 'Trainee at Tuwaiq Academy',
     'major': 'Computer Science',
     'university': 'Umm Al-Qura University',
