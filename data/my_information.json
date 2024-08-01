@@ -1,0 +1,26 @@
+{
+  "name": "Fahad Alharbi",
+  "age": 29,
+  "occupation": "Full stack developer",
+  "hobbies": [
+    {
+      "name": "Reading and writing 🤓📚",
+      "description": "Reading anything .."
+    },
+    {
+      "name": "Otako 🍿🎬",
+      "description": "Watching anime :)"
+    },
+    {
+      "name": "Calisthenics 💪🏼💪🏼",
+      "description": "exercises that rely on body weight for resistance."
+    }
+  ],
+  "interests": [
+    "Self-study and Education 👨🏻‍🏫🎓",
+    "Cyber Security 😼🔒",
+    "Psychology 🧠🥼",
+    "Healthy food 🍎🍔"
+  ],
+  "additionalInfo": "Full-stack (NestJS, React, React Native, PostgreSQL, digitalOcean and familiar with API"
+}
