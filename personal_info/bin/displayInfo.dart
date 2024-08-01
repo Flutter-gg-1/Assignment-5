@@ -4,9 +4,9 @@ import 'colorprint.dart';
 
 genralInfo({required Map<String, dynamic> info}) {
   print(""); // Empty line for spacing
-  printPink("=== General Information ===");
-   printInfo("Name:${info['name']}");
-   printInfo("Age: ${info['age']}");
-   printInfo("Occupation: ${info['occupation']}");
-   printInfo(""); // Empty line for spacing
+  printError("=== General Information ===");
+   printSuccess("Name:${info['name']}");
+   printSuccess("Age: ${info['age']}");
+   printSuccess("Occupation: ${info['occupation']}");
+   printSuccess(""); // Empty line for spacing
 }

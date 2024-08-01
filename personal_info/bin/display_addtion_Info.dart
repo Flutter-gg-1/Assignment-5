@@ -2,9 +2,9 @@
 import 'colorprint.dart';
 
 display_addtioninfo() {
-  printPink("--------------------------");
-   printInfo("I am a very passionate and creative person. ");
-   printInfo(
+  printError("--------------------------");
+   printSuccess("I am a very passionate and creative person. ");
+   printSuccess(
       "My mind is full of great ideas and I'm always eager to learn new things and explore different areas");
-   printInfo(""); // Empty line for spacing
+   printSuccess(""); // Empty line for spacing
 }

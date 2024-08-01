@@ -2,9 +2,9 @@
 import 'colorprint.dart';
 
 displayHobbis({required List<String> hobbies}) {
-  printPink("=== Hobbies ===");
+  printError("=== Hobbies ===");
   for (var hobby in hobbies) {
-     printInfo(hobby);
+     printSuccess(hobby);
   }
    printInfo(""); // Empty line for spacing
 }
