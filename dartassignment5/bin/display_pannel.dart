@@ -2,6 +2,7 @@ import 'dart:io';
 import 'colors.dart';
 
 pannel() {
+  //main pannel
   print('\n\n\n\n\n');
   print("-----" * 9);
   print("|$brightCyanBG&---> ًWelcome to my personality Page<---&   \x1B[0m|");
@@ -10,10 +11,10 @@ pannel() {
   print("|2: Interests                                |");
   print("|3: Additional Information                   |");
   print("|Exit write q                                |");
-
   print("-----" * 9);
 }
 
+//print general info
 displayInfo({required List<Map<String, dynamic>> myInfoList}) {
   for (var element in myInfoList) {
     print("\n\n\n\n\n\n\n\n\n\n----------------------------------");
@@ -28,9 +29,8 @@ displayInfo({required List<Map<String, dynamic>> myInfoList}) {
   }
 }
 
+//print hobbies
 displayHhobbies({required List<Map<String, dynamic>> myHobbies}) {
-  Map<String, dynamic> copy = {};
-
   print("\n\n\n\n\n\n\n\n");
   for (var element in myHobbies) {
     print("----------------------------------");
@@ -39,6 +39,17 @@ displayHhobbies({required List<Map<String, dynamic>> myHobbies}) {
     print("|Description: ${element["description"]}");
     print("----------------------------------");
   }
+  stdin.readLineSync();
+}
+
+//print Interest
+displayInterest({required Map<String, dynamic> interestvalue}) {
+  print("\n\n\n\n\n\n\n\n\n\n\n\n");
+  print("----------------------------------");
+  print("|$brightCyanBG&---> My Interests  <---& \x1B[0m       |");
+  print("|Interests: ${interestvalue["interests"]}       |");
+  print("|Passions: ${interestvalue["passions"]}    |");
+  print("----------------------------------");
 
   stdin.readLineSync();
 }

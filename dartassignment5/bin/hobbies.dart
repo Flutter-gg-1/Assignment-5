@@ -2,6 +2,7 @@ import 'data_list.dart';
 import 'display_pannel.dart';
 
 hobbies() {
+  //list for hobbies
   List<Map<String, dynamic>> mapHobbiesCopy = [
     {
       "hobbies": 'Reading',
@@ -19,5 +20,6 @@ hobbies() {
     }
   ];
   hobbiesList = mapHobbiesCopy;
+  //to print the hobbies
   displayHhobbies(myHobbies: hobbiesList);
 }
